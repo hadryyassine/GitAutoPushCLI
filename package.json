@@ -1,0 +1,23 @@
+{
+  "name": "gitautopushcli",
+  "version": "1.0.0",
+  "description": "a simple CLI tool that can automate the process of pushing a local git repository to your GitHub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hadryyassine/GitAutoPushCLI.git"
+  },
+  "keywords": [
+    "CLI",
+    "Git"
+  ],
+  "author": "Yassine Hadry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hadryyassine/GitAutoPushCLI/issues"
+  },
+  "homepage": "https://github.com/hadryyassine/GitAutoPushCLI#readme"
+}
