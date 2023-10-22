@@ -45,7 +45,7 @@ async function main() {
 
   if (answer.proceed === "Yes") {
     console.log(chalk.green("Authenticating..."));
-    const octokit = await await auth.authentificate();
+    const octokit = await auth.authentificate();
   } else {
     console.log(chalk.green("Okay, See you then !"));
   }

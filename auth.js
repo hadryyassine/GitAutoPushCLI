@@ -4,7 +4,7 @@ const { Octokit } = require("@octokit/rest");
 async function authentificate() {
   const question = [
     {
-      name: "Github-Token",
+      name: "token",
       type: "input",
       message: "Enter your Github Token",
       validate: function (value) {
@@ -21,7 +21,7 @@ async function authentificate() {
 
   try {
     const octokit = new Octokit({
-      auth: answer("Github-Token"),
+      auth: answer.token,
     });
     return octokit;
   } catch (error) {
@@ -30,4 +30,4 @@ async function authentificate() {
   }
 }
 
-module.exports(authentificate);
+module.exports = { authentificate };
