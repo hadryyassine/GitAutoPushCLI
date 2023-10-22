@@ -4,6 +4,7 @@ async function main() {
   const clear = require("clear");
   const figlet = require("figlet");
   const inquirer = require("inquirer");
+  const auth = require("./auth");
 
   app
     .command("init")
@@ -44,6 +45,7 @@ async function main() {
 
   if (answer.proceed === "Yes") {
     console.log(chalk.green("Authenticating..."));
+    const octokit = await await auth.authentificate();
   } else {
     console.log(chalk.green("Okay, See you then !"));
   }
